@@ -1,0 +1,131 @@
+/* INDEX - MAIN */
+.container h1, .container .carousel .produits h2{
+    text-align: center;
+    font-size: 2em;
+    color: #186A3B;
+}
+.container>img{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+.container .carousel{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+}
+.prev .fas, .next .fas{
+   font-size: 30px;
+}
+.container .carousel .produits{
+    background-color:#F6F6F6;
+    border: 2px solid #f0f0f0;
+    text-align: center;
+    padding:1em;
+    padding-bottom: 2em;
+    margin: 1.2em;
+    border-radius: 5%;
+}
+.container .carousel .produits:hover{
+    animation: progress 2s;
+    box-shadow: 2px 2px 2px 2px #186A3B;
+}
+@keyframes progress {
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.2);
+    }
+}
+.container .carousel .produits a{
+    text-decoration: none;
+    background-color:#52be80;
+    border: 1px solid #186A3B ;
+    color: #F6F6F6;
+    font-size: 20px;
+    padding: 0.7em;
+    
+}    
+.container .carousel .produits a:hover{
+    background-color:  #1D8348;
+    transition: linear background-color 2s;
+}
+
+/* MAIN - PRODUITS */
+.container{
+    margin: 4em;
+}
+.container h2{
+    text-align: center;
+    font-size: 2.5em;
+    color: #186A3B;
+}
+.container .products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .prix img{
+    width: 250px;
+}
+
+.container .fiche span{
+    font-weight: bold;
+}
+.container .fiche .fas{
+    color: yellow;
+}
+.container .fiche form{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.container .descrip p{
+    padding: 3em;
+}
+.container .products .fiche button{
+    background-color: #186A3B;
+    color: #f0f0f0;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+.container .products .fiche button a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+.container .products .fiche button:hover{
+    background-color: #52be80;
+    animation: progress 2s;
+    box-shadow: 2px 2px 2px 2px #186A3B;
+}
+@keyframes progress {
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.2);
+    }
+}
+@media screen and (max-width:739px) {
+    .container img{
+        width: 270px;
+    }
+    .container .products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 740px){
+    .container .products{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .container .prix img{
+        width: 150px;
+    }
+}
